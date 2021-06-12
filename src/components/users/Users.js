@@ -8,7 +8,7 @@ const Users = ({ users, loading, errorMessage }) => {
     <Fragment>
       {loading && <Spinner />}
       {users && (
-        <div className='grid-3'>
+        <div className='grid-3' style={{ marginBottom: "60vh" }}>
           {users.map((user) => (
             <UserItem key={user.id} user={user} />
           ))}
