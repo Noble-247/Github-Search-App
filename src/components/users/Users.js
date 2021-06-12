@@ -8,7 +8,7 @@ const Users = ({ users, loading, errorMessage }) => {
     <Fragment>
       {loading && <Spinner />}
       {users && (
-        <div style={userGridStyle}>
+        <div className='grid-3'>
           {users.map((user) => (
             <UserItem key={user.id} user={user} />
           ))}
@@ -33,24 +33,10 @@ Users.propTypes = {
   loading: PropTypes.bool.isRequired,
 };
 
-const userGridStyle = {
+/* const userGridStyle = {
   display: "grid",
   gridTemplateColumns: "repeat(3, 1fr)",
   gridGap: "1rem",
-};
+}; */
 
 export default Users;
-
-/*  if (loading) {
-    return <Spinner />;
-  } else {
-    return (
-      <Fragment>
-        <div style={userGridStyle}>
-          {users.map((user) => (
-            <UserItem key={user.id} user={user} />
-          ))}
-        </div>
-      </Fragment>
-    );
-  } */
