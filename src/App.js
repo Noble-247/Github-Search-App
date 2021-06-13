@@ -9,6 +9,7 @@ import Search from "./components/users/Search";
 import Alert from "./components/layout/Alert";
 import About from "./components/pages/About";
 import User from "./components/users/User";
+import NotFound from "./components/pages/NotFound";
 
 const App = () => {
   const [users, setUsers] = useState([]);
@@ -157,6 +158,7 @@ const App = () => {
                 />
               )}
             />
+            <Route exact path='*' component={NotFound} />
           </Switch>
         </div>
         <div>
