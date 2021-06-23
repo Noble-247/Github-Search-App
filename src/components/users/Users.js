@@ -1,9 +1,17 @@
-import React, { Fragment } from "react";
+import React, { useContext, Fragment, useEffect } from "react";
 import UserItem from "./UserItem";
 import Spinner from "../layout/Spinner";
-import PropTypes from "prop-types";
+import GithubContext from "../context/github/githubContext";
 
-const Users = ({ users, loading, errorMessage }) => {
+const Users = () => {
+  const githubContext = useContext(GithubContext);
+  const { users, loading, errorMessage, fetchFirst30Users } = githubContext;
+
+  useEffect(() => {
+    fetchFirst30Users();
+    // eslint-disable-next-line
+  }, []);
+
   return (
     <Fragment>
       {loading && <Spinner />}
@@ -26,11 +34,6 @@ const Users = ({ users, loading, errorMessage }) => {
       )}
     </Fragment>
   );
-};
-
-Users.propTypes = {
-  users: PropTypes.array.isRequired,
-  loading: PropTypes.bool.isRequired,
 };
 
 /* const userGridStyle = {
