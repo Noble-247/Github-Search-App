@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import GithubContext from "../context/github/githubContext";
 import AlertContext from "../context/alert/alertContext";
+import { css } from "@emotion/css";
 
 const Search = () => {
   const githubContext = useContext(GithubContext);
@@ -28,7 +29,10 @@ const Search = () => {
     <div>
       <form onSubmit={handleSubmit} className='form'>
         <input
-          style={formStyles}
+          className={css`
+            outline-color: #dc3545;
+            padding: 0.4rem;
+          `}
           value={text}
           onChange={handleChange}
           type='text'
@@ -53,10 +57,6 @@ const Search = () => {
       )}
     </div>
   );
-};
-const formStyles = {
-  outlineColor: " #dc3545",
-  padding: "0.4rem 0",
 };
 
 export default Search;

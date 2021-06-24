@@ -1,3 +1,4 @@
+import { css } from "@emotion/css";
 import React, { Fragment } from "react";
 import spinner from "./spinner.gif";
 export const Spinner = () => {
@@ -6,7 +7,11 @@ export const Spinner = () => {
       <img
         src={spinner}
         alt='Loading...'
-        style={{ width: "200px", margin: "auto", display: "block" }}
+        className={css`
+          width: 200px;
+          margin: auto;
+          display: block;
+        `}
       />
     </Fragment>
   );
