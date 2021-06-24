@@ -1,16 +1,17 @@
-import React, { useContext, Fragment, useEffect } from "react";
+import React, { useContext, Fragment /* useEffect */ } from "react";
 import UserItem from "./UserItem";
 import Spinner from "../layout/Spinner";
 import GithubContext from "../context/github/githubContext";
 
 const Users = () => {
   const githubContext = useContext(GithubContext);
-  const { users, loading, errorMessage, fetchFirst30Users } = githubContext;
+  const { users, loading, errorMessage /* fetchFirst30Users */ } =
+    githubContext;
 
-  useEffect(() => {
+  /*  useEffect(() => {
     fetchFirst30Users();
     // eslint-disable-next-line
-  }, []);
+  }, []); */
 
   return (
     <Fragment>
