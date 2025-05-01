@@ -8,7 +8,8 @@ function Navbar() {
     <nav className='navbar bg-primary'>
       <h1>
         <Link to='/' className='brand'>
-          <FaGithub className='brand-icon' /> Github Search App
+          <FaGithub className='brand-icon' />{' '}
+          <span className='brand-text'>Github Search App</span>
         </Link>
       </h1>
       <ul>

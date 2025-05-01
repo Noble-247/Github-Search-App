@@ -488,6 +488,11 @@ table th {
   }
 }
 
+@media (max-width: 500px) {
+  .brand-text {
+    display: none;
+  }
+}
 /* Home page styles */
 .home-header {
   padding: 2rem 0;
