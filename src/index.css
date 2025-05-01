@@ -571,6 +571,7 @@ table th {
   font-weight: bold;
   margin: 0;
   background: linear-gradient(45deg, #333333, #dc3545);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -579,6 +580,7 @@ table th {
   display: inline-block;
   animation: rotate 4s infinite linear;
   background: #dc3545;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: #dc3545;
 }
