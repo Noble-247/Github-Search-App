@@ -1,18 +1,28 @@
-import { FaGithub } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { FaGithub, FaHome, FaInfoCircle } from 'react-icons/fa';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+  const location = useLocation();
+
   return (
-    <nav className="navbar bg-primary">
+    <nav className='navbar bg-primary'>
       <h1>
-        <FaGithub /> Github Search App
+        <Link to='/' className='brand'>
+          <FaGithub className='brand-icon' /> Github Search App
+        </Link>
       </h1>
       <ul>
         <li>
-          <Link to="/">Home</Link>
+          <Link to='/' className={location.pathname === '/' ? 'active' : ''}>
+            <FaHome /> <span>Home</span>
+          </Link>
         </li>
         <li>
-          <Link to="/about">About</Link>
+          <Link
+            to='/about'
+            className={location.pathname === '/about' ? 'active' : ''}>
+            <FaInfoCircle /> <span>About</span>
+          </Link>
         </li>
       </ul>
     </nav>

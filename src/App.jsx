@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NavBar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import About from './components/pages/About';
@@ -20,7 +20,9 @@ function App() {
                 <Route index element={<Home />} />
                 <Route path='about' element={<About />} />
                 <Route path='/user/:login' element={<User />} />
+                <Route path='404' element={<NotFound />} />
                 <Route path='*' element={<NotFound />} />
+                {<Route path='*' element={<Navigate to='/404' />} />}
               </Routes>
             </div>
             <Footer />
