@@ -6,7 +6,7 @@ function About() {
       </h1>
 
       <div className='card bg-light'>
-        <h2 className='text-dark mb-2'>What is Github Search?</h2>
+        <h2 className='text-dark medium mb-2'>What is Github Search?</h2>
         <p className='lead'>
           Github Search is a powerful tool that allows you to easily search and
           explore Github user profiles. Built with React, this application

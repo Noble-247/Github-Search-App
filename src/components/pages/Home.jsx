@@ -7,18 +7,14 @@ function Home() {
     <Fragment>
       <div className='container'>
         <div className='home-header text-center my-4'>
-          <h1 className='large text-primary'>
-            GitHub User Explorer <i className='fab fa-github'></i>
-          </h1>
+          <h1 className='large text-primary'>GitHub User Explorer</h1>
           <p className='lead mb-3'>
             Search GitHub profiles and discover developers from around the world
           </p>
         </div>
 
-        <div className='search-container card bg-light p-3 mb-4'>
-          <h2 className='text-dark mb-2'>
-            <i className='fas fa-search'></i> Search Users
-          </h2>
+        <div className='search-container card bg-light p-2 mb-4'>
+          <h2 className='text-dark medium mb-2'>Search Users</h2>
           <Search />
         </div>
 

@@ -5,7 +5,7 @@ function Footer() {
 
   return (
     <footer className='footer'>
-      <div className='footer-content'>
+      <div className='footer-content container'>
         <div className='footer-section'>
           <h4>Github Search App</h4>
           <p>
@@ -16,14 +16,14 @@ function Footer() {
           <h4>Connect</h4>
           <div className='social-links'>
             <a
-              href='https://github.com/yourusername'
+              href='https://github.com/Noble-247'
               target='_blank'
               rel='noopener noreferrer'
               className='social-link'>
               <FaGithub />
             </a>
             <a
-              href='https://linkedin.com/in/yourusername'
+              href='https://www.linkedin.com/in/emmanuel-ekpobimi-7ab32b9b/'
               target='_blank'
               rel='noopener noreferrer'
               className='social-link'>
@@ -39,7 +39,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className='footer-bottom'>
+      <div className='footer-bottom container'>
         <p>
           &copy; {year} Github Search App. Designed by
           <a
