@@ -1,4 +1,9 @@
+import useTitle from '../../hooks/useTitle';
+
 function About() {
+  // Set the document title for the about page
+  useTitle('About', true);
+
   return (
     <section className='about-section container'>
       <h1 className='text-primary large text-center mb-4'>

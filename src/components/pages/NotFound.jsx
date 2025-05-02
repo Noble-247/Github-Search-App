@@ -1,7 +1,11 @@
 import { Link } from 'react-router-dom';
 import { FaHome } from 'react-icons/fa';
+import useTitle from '../../hooks/useTitle';
 
 function NotFound() {
+  // Set the document title for the Not Found page
+  useTitle('Page Not Found', true);
+
   return (
     <div className='not-found-container'>
       <div className='not-found-content'>

@@ -1,8 +1,12 @@
 import { Fragment } from 'react';
 import Search from '../users/Search';
 import Users from '../users/Users';
+import useTitle from '../../hooks/useTitle';
 
 function Home() {
+  // Set the document title for the home page
+  useTitle('Home', true);
+
   return (
     <Fragment>
       <div className='container'>
