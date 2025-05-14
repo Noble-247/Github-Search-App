@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useReducer } from "react";
-import axios from "axios";
-import GithubContext from "./githubContext";
-import GithubReducer from "./githubReducer";
+import { useReducer } from 'react';
+import axios from 'axios';
+import GithubContext from './githubContext';
+import GithubReducer from './githubReducer';
 import {
   SEARCH_USERS,
   SET_LOADING,
@@ -11,7 +11,7 @@ import {
   GET_REPOS,
   SET_ERROR_MESSAGE,
   FETCH_FIRST_30_USERS,
-} from "../types";
+} from '../types';
 
 const GithubState = (props) => {
   const initialState = {
@@ -19,7 +19,7 @@ const GithubState = (props) => {
     user: {},
     repos: [],
     loading: false,
-    errorMessage: "",
+    errorMessage: '',
   };
 
   const [state, dispatch] = useReducer(GithubReducer, initialState);
@@ -56,13 +56,22 @@ const GithubState = (props) => {
           import.meta.env.VITE_GITHUB_CLIENT_ID
         }&client_secret=${import.meta.env.VITE_GITHUB_CLIENT_SECRET}`
       );
-      console.log(response.data);
-      dispatch({
-        type: SEARCH_USERS,
-        payload: response.data.items,
-      });
+      if (response.data.total_count === 0) {
+        dispatch({
+          type: SET_ERROR_MESSAGE,
+          payload: 'No users found matching your search criteria',
+        });
+      } else {
+        dispatch({
+          type: SEARCH_USERS,
+          payload: response.data.items,
+        });
+      }
     } catch (error) {
-      console.log(error.message);
+      dispatch({
+        type: SET_ERROR_MESSAGE,
+        payload: error.message,
+      });
     }
   };
 
@@ -129,8 +138,7 @@ const GithubState = (props) => {
         clearUsers,
         getUser,
         getUserRepos,
-      }}
-    >
+      }}>
       {props.children}
     </GithubContext.Provider>
   );
