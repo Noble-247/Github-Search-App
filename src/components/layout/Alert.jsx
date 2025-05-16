@@ -1,5 +1,6 @@
-import { useContext } from "react";
-import AlertContext from "../context/alert/alertContext";
+import { useContext } from 'react';
+import { FiAlertCircle } from 'react-icons/fi';
+import AlertContext from '../context/alert/alertContext';
 
 const Alert = () => {
   const alertContext = useContext(AlertContext);
@@ -7,7 +8,8 @@ const Alert = () => {
   return (
     alert !== null && (
       <div className={`alert alert-${alert.type}`}>
-        <i className="fas fa-info-circle"></i> {alert.message}
+        <FiAlertCircle style={{ marginRight: '10px', fontSize: '1.2em' }} />
+        {alert.message}
       </div>
     )
   );

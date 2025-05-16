@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import NavBar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+import Alert from './components/layout/Alert';
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
 import GithubState from './components/context/github/GithubState';
@@ -16,6 +17,7 @@ function App() {
           <div className='App'>
             <NavBar />
             <div className='container'>
+              <Alert />
               <Routes>
                 <Route index element={<Home />} />
                 <Route path='about' element={<About />} />

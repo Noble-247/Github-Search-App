@@ -1,4 +1,5 @@
 import { Fragment } from 'react';
+import { FiInfo } from 'react-icons/fi';
 import Search from '../users/Search';
 import Users from '../users/Users';
 import useTitle from '../../hooks/useTitle';
@@ -28,7 +29,7 @@ function Home() {
 
         <div className='quick-tips card bg-white p-2 my-3'>
           <h3 className='text-primary'>
-            <i className='fas fa-info-circle'></i> Quick Tips
+            <FiInfo style={{ marginRight: '8px' }} /> Quick Tips
           </h3>
           <ul className='list'>
             <li>Type a username and press enter to search</li>

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { Fragment, useContext, useEffect } from 'react';
+import { FiCheck, FiX } from 'react-icons/fi';
 import Spinner from '../layout/Spinner';
 import { Link, useParams } from 'react-router-dom';
 import Repos from '../repos/Repos';
@@ -40,9 +41,9 @@ const User = () => {
       </Link>
       Hireable:{' '}
       {hireable ? (
-        <i className='far fa-check-circle text-success'></i>
+        <FiCheck className='text-success' style={{ verticalAlign: 'middle' }} />
       ) : (
-        <i className='far fa-times-circle text-danger'></i>
+        <FiX className='text-danger' style={{ verticalAlign: 'middle' }} />
       )}
       <div className='card grid-2'>
         <div className='all-center'>
