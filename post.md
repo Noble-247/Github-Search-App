@@ -1,6 +1,6 @@
 # Introduction
 
-Hey everyone! 👋 Here is a little personal project that I recently breathed new life into – my GitHub Search App!
+👋 Here is a little personal project that I recently breathed new life into – GitHub Search App!
 
 ## Background
 
