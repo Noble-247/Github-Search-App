@@ -1,0 +1,72 @@
+{
+  "@types/react": {
+    "current": "18.3.28",
+    "wanted": "18.3.28",
+    "latest": "19.2.14",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\@types\\react"
+  },
+  "@types/react-dom": {
+    "current": "18.3.7",
+    "wanted": "18.3.7",
+    "latest": "19.2.3",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\@types\\react-dom"
+  },
+  "@vitejs/plugin-react": {
+    "current": "4.7.0",
+    "wanted": "4.7.0",
+    "latest": "6.0.1",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\@vitejs\\plugin-react"
+  },
+  "eslint": {
+    "current": "8.57.1",
+    "wanted": "8.57.1",
+    "latest": "10.0.3",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\eslint"
+  },
+  "eslint-plugin-react-hooks": {
+    "current": "4.6.2",
+    "wanted": "4.6.2",
+    "latest": "7.0.1",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\eslint-plugin-react-hooks"
+  },
+  "eslint-plugin-react-refresh": {
+    "current": "0.4.26",
+    "wanted": "0.4.26",
+    "latest": "0.5.2",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\eslint-plugin-react-refresh"
+  },
+  "react": {
+    "current": "18.3.1",
+    "wanted": "18.3.1",
+    "latest": "19.2.4",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\react"
+  },
+  "react-dom": {
+    "current": "18.3.1",
+    "wanted": "18.3.1",
+    "latest": "19.2.4",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\react-dom"
+  },
+  "react-router-dom": {
+    "current": "6.30.3",
+    "wanted": "6.30.3",
+    "latest": "7.13.1",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\react-router-dom"
+  },
+  "vite": {
+    "current": "5.4.21",
+    "wanted": "5.4.21",
+    "latest": "8.0.0",
+    "dependent": "Github-Search-App-update",
+    "location": "C:\\Emmanuel CDrive\\Projects Built With React\\reactjs-projects\\Production-Live-Projects\\Github-Search-App-update\\node_modules\\vite"
+  }
+}

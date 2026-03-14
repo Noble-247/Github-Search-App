@@ -1,0 +1,11 @@
+Package                      Current   Wanted   Latest  Location                                  Depended by
+@types/react                 18.3.28  18.3.28  19.2.14  node_modules/@types/react                 Github-Search-App-update
+@types/react-dom              18.3.7   18.3.7   19.2.3  node_modules/@types/react-dom             Github-Search-App-update
+@vitejs/plugin-react           4.7.0    4.7.0    6.0.1  node_modules/@vitejs/plugin-react         Github-Search-App-update
+eslint                        8.57.1   8.57.1   10.0.3  node_modules/eslint                       Github-Search-App-update
+eslint-plugin-react-hooks      4.6.2    4.6.2    7.0.1  node_modules/eslint-plugin-react-hooks    Github-Search-App-update
+eslint-plugin-react-refresh   0.4.26   0.4.26    0.5.2  node_modules/eslint-plugin-react-refresh  Github-Search-App-update
+react                         18.3.1   18.3.1   19.2.4  node_modules/react                        Github-Search-App-update
+react-dom                     18.3.1   18.3.1   19.2.4  node_modules/react-dom                    Github-Search-App-update
+react-router-dom              6.30.3   6.30.3   7.13.1  node_modules/react-router-dom             Github-Search-App-update
+vite                          5.4.21   5.4.21    8.0.0  node_modules/vite                         Github-Search-App-update
