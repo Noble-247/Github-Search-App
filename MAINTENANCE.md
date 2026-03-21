@@ -5,8 +5,8 @@
 - **Deployment**: Netlify
 - **Node Version**: 22
 - **Package Manager**: npm
-- **Repository**: [Add your GitHub repo URL]
-- **Live URL**: [Add your Netlify URL]
+- **Repository**: [https://github.com/Noble-247/Github-Search-App]
+- **Live URL**: [https://coolgithub-search.netlify.app/]
 
 ## Features to Test After Updates
 - ✅ Real-time search as you type
