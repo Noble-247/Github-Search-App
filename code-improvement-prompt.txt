@@ -1,0 +1,14 @@
+Act as a senior software developer, go through the codebase of this project and run a thorough analysis of the project.
+
+Based on your analysis, provide a comprehensive report on the current state of the project, including:
+
+1. **Architecture and Structure**: Assess the overall architecture, module organization, and code structure. Identify any anti-patterns or areas where the structure could be improved for better maintainability and scalability.
+2. **Code Quality**: Evaluate code quality, including code style, naming conventions, documentation, and best practices. Point out any code smells or areas that need refactoring.
+3. **Performance**: Identify potential performance bottlenecks and suggest optimizations to improve the application's performance.
+4. **Security**: Check for any security vulnerabilities and recommend appropriate measures to enhance the application's security.
+5. **Scalability**: Assess the application's scalability and suggest improvements to handle increased load and future growth.
+6. **Error Handling**: Review error handling mechanisms and recommend improvements for better error management and user experience.
+7. **Testing**: Evaluate the current testing strategy and suggest improvements to enhance test coverage and quality.
+8. **Feature Gaps**: Identify any missing features or functionalities that could enhance the application's value proposition.
+9. **Best Practices**: Recommend industry best practices and design patterns that could be adopted to improve the application.
+10. **Implementation Roadmap**: Provide a prioritized list of recommended improvements with a suggested implementation roadmap in a new task.md file including estimated effort and impact for each recommendation. Make sure to give a very good and detailed response.    
